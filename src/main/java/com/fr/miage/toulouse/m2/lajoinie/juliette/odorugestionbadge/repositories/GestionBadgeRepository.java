@@ -5,5 +5,7 @@ import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean
 public interface GestionBadgeRepository extends GestionBadgeRepositoryBase<Badge> {
+
+    Badge findByIdMembre(Long idMembre);
 }
 
